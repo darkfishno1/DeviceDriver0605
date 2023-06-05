@@ -8,6 +8,8 @@ public:
     int read(long address);
     void write(long address, int data);
 
-protected:
+public:
     FlashMemoryDevice* m_hardware;
+public:
+    const int TotalReadTryCount = 5;
 };
